@@ -3,10 +3,18 @@
 
 import { Profile } from './Profile';
 
+import profileUser from '../data/profileUser.json';
+
 export const App = () => {
   return (
     <>
-      <Profile />
+      <Profile
+        username={profileUser.username}
+        tag={profileUser.tag}
+        location={profileUser.location}
+        avatar={profileUser.avatar}
+        stats={profileUser.stats}
+      />
     </>
   );
 };
