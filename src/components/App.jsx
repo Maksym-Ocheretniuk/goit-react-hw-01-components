@@ -2,8 +2,10 @@
 // import ReactDOM from "react-dom/client";
 
 import { Profile } from './Profile';
-
 import profileUser from '../data/profileUser.json';
+
+import { Statistics } from './Statistics';
+import statisticsData from '../data/statisticsData.json';
 
 export const App = () => {
   return (
@@ -15,6 +17,7 @@ export const App = () => {
         avatar={profileUser.avatar}
         stats={profileUser.stats}
       />
+      <Statistics />
     </>
   );
 };
