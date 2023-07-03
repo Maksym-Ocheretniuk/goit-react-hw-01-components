@@ -1,14 +1,30 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import css from './TransactionHistory.module.css';
 
-export const TransactionHistory = ({ id, type, amount, avatar, currency }) => {
-  return console.log('5');
+export const TransactionHistory = ({ items }) => {
+  return (
+    <table className={css.transactionHistory}>
+      <thead>
+        <tr className={css.tableHeadRow}>
+          <th className={css.tableHeader}>Type</th>
+          <th className={css.tableHeader}>Amount</th>
+          <th className={css.tableHeader}>Currency</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        {items.map(({ id, type, amount, currency }) => (
+          <tr key={id} className={css.tableBodyRow}>
+            <td className={css.tableData}>{type}</td>
+            <td className={css.tableData}>{amount}</td>
+            <td className={css.tableData}>{currency}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
 };
 
-// Profile.propTypes = {
-//   username: PropTypes.string.isRequired,
-//   tag: PropTypes.string.isRequired,
-//   location: PropTypes.string.isRequired,
-//   avatar: PropTypes.string.isRequired,
-//   stats: PropTypes.objectOf(PropTypes.number).isRequired,
-// };
+TransactionHistory.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string.isRequired)),
+};

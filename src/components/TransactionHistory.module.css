@@ -1,75 +1,30 @@
-.profile {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-
-  width: 350px;
+.transactionHistory {
+  background-color: #ffffff;
+  width: 450px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 50px;
-
-  background-color: #ffffff;
-
-  border-radius: 10px;
-  /* overflow: hidden; */
+  border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.description {
-  display: flex;
-  flex-direction: column;
-  margin-top: 30px;
+.tableHeadRow {
+  background-color: rgb(10, 184, 207);
 }
 
-.avatar {
-  /* margin-top: 10px; */
-  width: 140px;
-  /* height: 140px; */
-  border-radius: 50%;
-  align-self: center;
-}
-
-.name {
-  margin-top: 20px;
-  font-size: 20px;
-  font-weight: bold;
-  color: #111111;
-}
-
-.tag {
-  margin-top: 10px;
-  font-size: 18px;
-  color: #6b5454;
-}
-
-.location {
-  margin-top: 10px;
-  font-size: 18px;
-  color: #6b5454;
-}
-
-.stats {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
-  background-color: #dae0e4;
-}
-
-.item {
+.tableHeader {
+  min-width: 100px;
   padding: 20px;
-  width: calc(100% / 3);
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
-    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
-.label {
-  display: block;
+.tableBodyRow:nth-child(2n) {
+  background-color: rgb(216, 221, 224);
+}
+
+.tableData {
+  text-align: center;
+  padding: 10px;
   color: #6b5454;
-  margin-bottom: 5px;
-}
-
-.quantity {
-  font-weight: bold;
-  color: #111111;
 }
