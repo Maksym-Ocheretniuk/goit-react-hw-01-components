@@ -1,16 +1,3 @@
-p,
-ul,
-li {
-  margin: 0;
-  padding: 0;
-}
-ul {
-  text-decoration: none;
-}
-li {
-  list-style: none;
-}
-
 .profile {
   display: flex;
   flex-direction: column;
