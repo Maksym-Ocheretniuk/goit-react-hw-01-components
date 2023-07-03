@@ -4,7 +4,7 @@
   justify-content: space-between;
   text-align: center;
 
-  width: 400px;
+  width: 350px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 60px;
@@ -17,6 +17,7 @@
 
 .title {
   margin-top: 40px;
+  margin-bottom: 0;
   text-transform: uppercase;
 
   color: #6b5454;
@@ -24,11 +25,13 @@
 
 .statList {
   display: flex;
-  margin-top: 40px;
+  /* margin-top: 40px;
+  margin-bottom: 0; */
+  margin: 40px auto 0 auto;
 }
 
 .item {
-  width: 80px;
+  width: 85px;
   color: #ffffff;
   padding-top: 10px;
   padding-bottom: 10px;
