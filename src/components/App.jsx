@@ -1,16 +1,16 @@
 // import React from "react";
 // import ReactDOM from "react-dom/client";
 
-import { Profile } from './Profile';
+import { Profile } from './profile/Profile';
 import profileUser from '../data/profileUser.json';
 
-import { Statistics } from './Statistics';
+import { Statistics } from './statistics/Statistics';
 import statisticsData from '../data/statisticsData.json';
 
-import { FriendList } from './FriendList';
+import { FriendList } from './friend-list/FriendList';
 import friendsData from '../data/friendsData.json';
 
-import { TransactionHistory } from './TransactionHistory';
+import { TransactionHistory } from './transaction-history/TransactionHistory';
 import transactionsData from '../data/transactionsData.json';
 
 export const App = () => {
